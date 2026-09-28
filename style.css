@@ -27,7 +27,7 @@ body {
 .foto-perfil {
     /* Define el tamaño exacto del círculo */
     width: 200px;
-    height: 200px;
+    height: 150px;
     
     /* Hace que la foto sea redonda */
     border-radius: 50%;
