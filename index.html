@@ -4,66 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jerónimo Ignacio Bustos | Portafolio</title>
-    <!-- Fuente Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <!-- Nueva fuente estética: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- CABECERA -->
     <header>
-        <div class="logo">JB</div>
+        <div class="logo">JB.</div>
         <nav>
             <ul>
-                <li><a href="#proyectos">PROYECTOS</a></li>
-                <li><a href="#sobre-mi">SOBRE MÍ</a></li>
-                <li><a href="#habilidades">SKILLS</a></li>
-                <li><a href="#contacto">CONTACTO</a></li>
-                <li><a href="JeronimoBustos.CV.pdf" target="_blank" class="btn-cv-header">DESCARGAR CV</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Skills</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="JeronimoBustos.CV.pdf" target="_blank" class="btn-cv-header">Descargar CV</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <!-- SECCIÓN: SOBRE MÍ (HERO DOS COLUMNAS) -->
+        <!-- SECCIÓN: SOBRE MÍ -->
         <section id="sobre-mi" class="hero-section">
             <div class="hero-texto">
-                <span class="hero-tag">● TÉCNICO EN DESARROLLO DE SOFTWARE // FULL STACK</span>
-                <h1>Jerónimo <span class="texto-acento">Bustos</span></h1>
+                <span class="hero-tag">Desarrollador de Software // Full Stack</span>
+                <h1>Hola, soy Jerónimo <span class="texto-acento">Bustos</span></h1>
                 <p>
-                    Programador Full Stack con experiencia en la creación de soluciones a medida, tanto web como de escritorio. Especializado en diseñar arquitecturas escalables, bases de datos relacionales y en la optimización de procesos operativos a través de código eficiente. Con un fuerte interés en la integración de infraestructuras cloud, busco constantemente aplicar nuevas herramientas tecnológicas para resolver problemas complejos y aportar valor en todo el ciclo de vida del software.
+                    Programador Full Stack especializado en diseñar arquitecturas escalables, bases de datos relacionales y optimizar procesos operativos a través de código eficiente. Busco constantemente aplicar nuevas tecnologías cloud para resolver problemas complejos y aportar valor real.
                 </p>
                 <div class="hero-botones">
-                    <a href="#proyectos" class="btn-primario">Ver proyectos &rarr;</a>
-                    <a href="#contacto" class="btn-secundario">ESCRIBIME &darr;</a>
+                    <a href="#proyectos" class="btn-primario">Ver proyectos</a>
+                    <a href="#contacto" class="btn-secundario">Contáctame</a>
                 </div>
             </div>
             <div class="hero-imagen">
-                <img src="WhatsApp Image 2026-09-28 at 09.38.58.jpeg" alt="Foto de Jerónimo Bustos" class="foto-perfil-nueva">
+                <!-- Aquí está la foto, ahora con una clase que la hará redonda, pequeña y estética -->
+                <img src="WhatsApp Image 2026-09-28 at 09.38.58.jpeg" alt="Foto de Jerónimo Bustos" class="foto-perfil-estetica">
             </div>
         </section>
 
         <!-- SECCIÓN: PROYECTOS -->
         <section id="proyectos">
             <div class="titulo-seccion">
-                <h2>Proyectos con <span class="texto-acento-cursiva">impacto real.</span></h2>
+                <h2>Proyectos <span class="texto-acento">Destacados</span></h2>
             </div>
 
-            <!-- PROYECTO 1: GESTOR DE MEDIDORES -->
+            <!-- PROYECTO 1 -->
             <div class="proyecto-premium">
-                <div class="proyecto-grafico">
-                    <div class="mockup-placeholder">
-                        <span>Gestor de Medidores</span>
-                    </div>
-                </div>
                 <div class="proyecto-info">
                     <h3>Gestor de Medidores - Cooperativa Eléctrica Medrano</h3>
-                    
-                    <h4 class="subtitulo-celeste">EL DESAFÍO</h4>
-                    <p>La cooperativa requería digitalizar y centralizar el control del inventario y trazabilidad técnica de los medidores eléctricos para eliminar registros manuales propensos a errores y optimizar los tiempos de respuesta operativa.</p>
-                    
-                    <h4 class="subtitulo-celeste">LA SOLUCIÓN</h4>
-                    <p>Desarrollé una aplicación de escritorio empresarial a medida. Permite auditar el ciclo de vida completo de cada equipo: desde su recepción en depósito/laboratorio y registro de ensayos técnicos, hasta su instalación final en el socio, asegurando un historial automatizado y seguro.</p>
+                    <p class="proyecto-descripcion">
+                        Aplicación de escritorio empresarial desarrollada a medida para digitalizar, agilizar y asegurar el control total del inventario y el ciclo de vida de los medidores eléctricos. Permite mantener un historial automatizado y auditable de todos sus movimientos.
+                    </p>
                     
                     <div class="tech-tags">
                         <span>Java</span>
@@ -72,50 +64,39 @@
                         <span>CSS</span>
                     </div>
                     
-                    <a href="https://github.com/jerobustos" target="_blank" class="link-proyecto">Ver Detalles &rarr;</a>
+                    <a href="https://github.com/jerobustos" target="_blank" class="link-proyecto">Explorar Código &rarr;</a>
                 </div>
             </div>
 
-            <!-- PROYECTO 2: NEXORA -->
+            <!-- PROYECTO 2 -->
             <div class="proyecto-premium">
-                <div class="proyecto-grafico">
-                    <div class="mockup-placeholder">
-                        <span>Nexora POS & SaaS</span>
-                    </div>
-                </div>
                 <div class="proyecto-info">
                     <h3>Nexora</h3>
-                    
-                    <h4 class="subtitulo-celeste">EL DESAFÍO</h4>
-                    <p>Muchos comercios y pymes carecen de una herramienta unificada para monitorear inventarios, controlar flujo de caja y procesar ventas de manera sincronizada y ágil.</p>
-                    
-                    <h4 class="subtitulo-celeste">LA SOLUCIÓN</h4>
-                    <p>Plataforma SaaS enfocada en gestión integral y Punto de Venta (POS). Permite administrar stock, emitir comprobantes, registrar transacciones en tiempo real, generar métricas de rendimiento comercial y controlar tesorería mediante una arquitectura robusta y escalable.</p>
+                    <p class="proyecto-descripcion">
+                        Plataforma SaaS orientada a la gestión integral y Punto de Venta (POS) para comercios. El sistema permite administrar inventario, registrar ventas en tiempo real, administrar tesorería, caja y generar reportes analíticos de manera eficiente.
+                    </p>
                     
                     <div class="tech-tags">
-                        <span>Java</span>
-                        <span>Spring Boot</span>
+                        <span>Java & Spring Boot</span>
                         <span>MySQL</span>
-                        <span>APIs Externas</span>
+                        <span>APIs</span>
                         <span>CSS</span>
                     </div>
                     
-                    <a href="https://nexora17.onrender.com/landing.html" target="_blank" class="link-proyecto">Visitar Plataforma &rarr;</a>
+                    <a href="https://nexora17.onrender.com/landing.html" target="_blank" class="link-proyecto">Visitar Web &rarr;</a>
                 </div>
             </div>
         </section>
 
-        <!-- SECCIÓN: HABILIDADES (COLUMNAS TÉCNICAS E INTERPERSONALES) -->
+        <!-- SECCIÓN: HABILIDADES -->
         <section id="habilidades">
             <div class="titulo-seccion">
-                <h2>Habilidades & <span class="texto-acento-cursiva">Stack Tecnológico.</span></h2>
+                <h2>Mis <span class="texto-acento">Habilidades</span></h2>
             </div>
 
             <div class="habilidades-grid">
-                <!-- COLUMNA TÉCNICA -->
+                <!-- TECNOLOGÍAS -->
                 <div class="columna-skills">
-                    <h3>Habilidades Técnicas</h3>
-                    
                     <div class="categoria-box">
                         <h4>Lenguajes y Frameworks</h4>
                         <div class="pills-container">
@@ -129,58 +110,49 @@
                     </div>
 
                     <div class="categoria-box">
-                        <h4>Infraestructura y Herramientas</h4>
+                        <h4>Infraestructura y Base de Datos</h4>
                         <div class="pills-container">
-                            <span class="pill">AWS (EC2, VPC, etc)</span>
+                            <span class="pill">AWS</span>
                             <span class="pill">Docker</span>
-                            <span class="pill">GitHub</span>
-                            <span class="pill">Linux / Windows Server</span>
-                        </div>
-                    </div>
-
-                    <div class="categoria-box">
-                        <h4>Bases de Datos</h4>
-                        <div class="pills-container">
                             <span class="pill">PostgreSQL</span>
                             <span class="pill">Supabase</span>
                             <span class="pill">MySQL</span>
                             <span class="pill">MongoDB</span>
+                            <span class="pill">GitHub</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- COLUMNA INTERPERSONAL -->
+                <!-- BLANDAS -->
                 <div class="columna-skills">
-                    <h3>Habilidades Interpersonales</h3>
-                    
                     <div class="categoria-box">
-                        <h4>Enfoque de Trabajo</h4>
-                        <ul class="lista-interpersonal">
-                            <li>Resolución analítica de problemas</li>
-                            <li>Visión integral y comercial de negocio</li>
-                            <li>Comunicación clara y efectiva</li>
-                            <li>Responsabilidad y proactividad</li>
-                            <li>Trabajo colaborativo y en equipo</li>
-                        </ul>
+                        <h4>Habilidades Interpersonales</h4>
+                        <div class="pills-container pills-blandas">
+                            <span class="pill">Resolución analítica</span>
+                            <span class="pill">Visión de negocio</span>
+                            <span class="pill">Comunicación efectiva</span>
+                            <span class="pill">Proactividad</span>
+                            <span class="pill">Trabajo en equipo</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- FOOTER / CONTACTO -->
+    <!-- FOOTER -->
     <footer id="contacto">
-        <h2>Hablemos</h2>
-        <p>¿Tienes un proyecto en mente o buscas incorporar un desarrollador a tu equipo? Envíame un mensaje.</p>
+        <h2>¿Trabajamos juntos?</h2>
+        <p>Siempre abierto a nuevos desafíos y oportunidades.</p>
         
         <div class="contacto-datos">
-            <p><strong>Teléfono:</strong> <a href="tel:2634320749">2634320749</a></p>
-            <p><strong>Email:</strong> <a href="mailto:jerobustos199@gmail.com">jerobustos199@gmail.com</a></p>
+            <a href="mailto:jerobustos199@gmail.com" class="btn-correo">jerobustos199@gmail.com</a>
         </div>
 
         <div class="redes">
             <a href="https://www.linkedin.com/in/jeronimo-bustos-93aa262b6/" target="_blank">LinkedIn</a>
             <a href="https://github.com/jerobustos" target="_blank">GitHub</a>
+            <a href="tel:2634320749">Llamar: 2634320749</a>
         </div>
     </footer>
 
