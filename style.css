@@ -171,8 +171,8 @@ h1 {
 }
 
 .foto-perfil-estetica {
-    width: 240px; /* Tamaño reducido */
-    height: 240px; /* Tamaño reducido */
+    width: 260px; /* Tamaño reducido */
+    height: 260px; /* Tamaño reducido */
     border-radius: 50%; /* Círculo perfecto */
     object-fit: cover; /* Evita que se estire */
     border: 6px solid #ffffff; /* Borde blanco elegante */
