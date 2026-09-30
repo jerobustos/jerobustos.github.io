@@ -4,124 +4,183 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jerónimo Ignacio Bustos | Portafolio</title>
-    <!-- Aquí enlazaremos nuestro archivo de estilos más adelante -->
+    <!-- Fuente Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- CABECERA -->
     <header>
-        <div class="logo">Jerónimo Ignacio Bustos</div>
+        <div class="logo">JB</div>
         <nav>
             <ul>
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#proyectos">PROYECTOS</a></li>
+                <li><a href="#sobre-mi">SOBRE MÍ</a></li>
+                <li><a href="#habilidades">SKILLS</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
+                <li><a href="JeronimoBustos.CV.pdf" target="_blank" class="btn-cv-header">DESCARGAR CV</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <!-- SECCIÓN: SOBRE MÍ (Obligatorio) -->
-        <section id="sobre-mi">
-    <img src=" WhatsApp Image 2026-09-28 at 09.38.58.jpeg" alt="Foto de Jerónimo" class="foto-perfil">
-    <h1>Hola, soy Jerónimo</h1>
-            <h2>Técnico en Desarrollo de Software</h2>
-            <p>
-             Programador Full Stack con experiencia en la creación de soluciones a medida, tanto web como de escritorio. Especializado en diseñar arquitecturas escalables, bases de datos relacionales y en la optimización de procesos operativos a través de código eficiente. Con un fuerte interés en la integración de infraestructuras cloud, busco constantemente aplicar nuevas herramientas tecnológicas para resolver problemas complejos y aportar valor en todo el ciclo de vida del software. 
-            </p>
-            <a href="JeronimoBustos.CV.pdf" target="_blank" class="btn-primario">Descargar CV</a>
-        </section>
-
-  <!-- SECCIÓN: HABILIDADES -->
-        <section id="habilidades" style="display: flex; gap: 60px; flex-wrap: wrap;">
-            
-            <!-- BLOQUE 1: HABILIDADES TÉCNICAS -->
-            <div style="flex: 1; min-width: 300px;">
-                <h2>Habilidades Técnicas</h2>
-                <div class="habilidades-contenedor" style="flex-direction: column; gap: 20px;">
-                    <div class="categoria">
-                        <h3>Lenguajes y Frameworks</h3>
-                        <ul>
-                            <li>Python</li>
-                            <li>Java</li>
-                            <li>React</li>
-                            <li>JavaScript</li>
-                            <li>CSS</li>
-                            <li>TypeScript</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="categoria">
-                        <h3>Infraestructura y herramientas</h3>
-                        <ul>
-                            <li>AWS (EC2, VPC, etc)</li>
-                            <li>Administración de servidores Linux/Windows</li>
-                            <li>GitHub</li>
-                            <li>Docker</li>  
-                        </ul>
-                    </div>
-                    
-                    <div class="categoria">
-                        <h3>Base de Datos</h3>
-                        <ul>
-                            <li>PostgreSQL</li>
-                            <li>Supabase</li>  
-                            <li>MySQL</li>
-                            <li>MongoDB</li>
-                        </ul>
-                    </div>
+        <!-- SECCIÓN: SOBRE MÍ (HERO DOS COLUMNAS) -->
+        <section id="sobre-mi" class="hero-section">
+            <div class="hero-texto">
+                <span class="hero-tag">● TÉCNICO EN DESARROLLO DE SOFTWARE // FULL STACK</span>
+                <h1>Jerónimo <span class="texto-acento">Bustos</span></h1>
+                <p>
+                    Programador Full Stack con experiencia en la creación de soluciones a medida, tanto web como de escritorio. Especializado en diseñar arquitecturas escalables, bases de datos relacionales y en la optimización de procesos operativos a través de código eficiente. Con un fuerte interés en la integración de infraestructuras cloud, busco constantemente aplicar nuevas herramientas tecnológicas para resolver problemas complejos y aportar valor en todo el ciclo de vida del software.
+                </p>
+                <div class="hero-botones">
+                    <a href="#proyectos" class="btn-primario">Ver proyectos &rarr;</a>
+                    <a href="#contacto" class="btn-secundario">ESCRIBIME &darr;</a>
                 </div>
             </div>
-
-            <!-- BLOQUE 2: HABILIDADES INTERPERSONALES -->
-            <div style="flex: 1; min-width: 300px;">
-                <h2>Habilidades Interpersonales</h2>
-                <div class="habilidades-contenedor">
-                    <div class="categoria">
-                        <ul>
-                            <li>Resolución analítica de problemas</li>
-                            <li>Visión integral y comercial</li>
-                            <li>Comunicación efectiva</li>
-                            <li>Responsable</li>
-                            <li>Trabajo en equipo</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="hero-imagen">
+                <img src="WhatsApp Image 2026-09-28 at 09.38.58.jpeg" alt="Foto de Jerónimo Bustos" class="foto-perfil-nueva">
             </div>
-
         </section>
-        <!-- SECCIÓN: PROYECTOS (Obligatorio) -->
+
+        <!-- SECCIÓN: PROYECTOS -->
         <section id="proyectos">
-            <h2>Proyectos Principales</h2>
-            
-            <div class="proyecto-card">
-                <h3>Gestor de Medidores Cooperativa</h3>
-                <p>Aplicación de escritorio empresarial desarrollada a medida para la Cooperativa Eléctrica Medrano.
-                El sistema digitaliza, agiliza y asegura el control total del inventario y el ciclo de vida de los medidores eléctricos. Permite a la cooperativa rastrear cada equipo desde su ingreso al laboratorio o depósito, el registro de sus ensayos técnicos, hasta su instalación final en el domicilio del socio, manteniendo un historial automatizado y auditable de todos sus movimientos.</p>
-                <p><strong>Tecnologías:</strong> Java, JavaFX, PostgreSQL,CSS</p>
-                <a href="enlace-a-tu-repo" target="_blank">Ver Proyecto</a>
+            <div class="titulo-seccion">
+                <h2>Proyectos con <span class="texto-acento-cursiva">impacto real.</span></h2>
             </div>
 
-            <div class="proyecto-card">
-                <h3>Nexora</h3>
-                <p>Es una plataforma SaaS (Software as a Service) orientada a la gestión integral y Punto de Venta (POS) para comercios.
-                El sistema permite a los negocios administrar su inventario, registrar ventas en tiempo real,reportes de ventas,administrar tesorrerpia y caja,etc</p>
-                <p><strong>Tecnologías:</strong> Java & Spring Boot,CSS,MySQL,APIs externas</p>
-                <a href="https://nexora17.onrender.com/landing.html" target="_blank">Ver Proyecto</a>
+            <!-- PROYECTO 1: GESTOR DE MEDIDORES -->
+            <div class="proyecto-premium">
+                <div class="proyecto-grafico">
+                    <div class="mockup-placeholder">
+                        <span>Gestor de Medidores</span>
+                    </div>
+                </div>
+                <div class="proyecto-info">
+                    <h3>Gestor de Medidores - Cooperativa Eléctrica Medrano</h3>
+                    
+                    <h4 class="subtitulo-celeste">EL DESAFÍO</h4>
+                    <p>La cooperativa requería digitalizar y centralizar el control del inventario y trazabilidad técnica de los medidores eléctricos para eliminar registros manuales propensos a errores y optimizar los tiempos de respuesta operativa.</p>
+                    
+                    <h4 class="subtitulo-celeste">LA SOLUCIÓN</h4>
+                    <p>Desarrollé una aplicación de escritorio empresarial a medida. Permite auditar el ciclo de vida completo de cada equipo: desde su recepción en depósito/laboratorio y registro de ensayos técnicos, hasta su instalación final en el socio, asegurando un historial automatizado y seguro.</p>
+                    
+                    <div class="tech-tags">
+                        <span>Java</span>
+                        <span>JavaFX</span>
+                        <span>PostgreSQL</span>
+                        <span>CSS</span>
+                    </div>
+                    
+                    <a href="https://github.com/jerobustos" target="_blank" class="link-proyecto">Ver Detalles &rarr;</a>
+                </div>
+            </div>
+
+            <!-- PROYECTO 2: NEXORA -->
+            <div class="proyecto-premium">
+                <div class="proyecto-grafico">
+                    <div class="mockup-placeholder">
+                        <span>Nexora POS & SaaS</span>
+                    </div>
+                </div>
+                <div class="proyecto-info">
+                    <h3>Nexora</h3>
+                    
+                    <h4 class="subtitulo-celeste">EL DESAFÍO</h4>
+                    <p>Muchos comercios y pymes carecen de una herramienta unificada para monitorear inventarios, controlar flujo de caja y procesar ventas de manera sincronizada y ágil.</p>
+                    
+                    <h4 class="subtitulo-celeste">LA SOLUCIÓN</h4>
+                    <p>Plataforma SaaS enfocada en gestión integral y Punto de Venta (POS). Permite administrar stock, emitir comprobantes, registrar transacciones en tiempo real, generar métricas de rendimiento comercial y controlar tesorería mediante una arquitectura robusta y escalable.</p>
+                    
+                    <div class="tech-tags">
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>MySQL</span>
+                        <span>APIs Externas</span>
+                        <span>CSS</span>
+                    </div>
+                    
+                    <a href="https://nexora17.onrender.com/landing.html" target="_blank" class="link-proyecto">Visitar Plataforma &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: HABILIDADES (COLUMNAS TÉCNICAS E INTERPERSONALES) -->
+        <section id="habilidades">
+            <div class="titulo-seccion">
+                <h2>Habilidades & <span class="texto-acento-cursiva">Stack Tecnológico.</span></h2>
+            </div>
+
+            <div class="habilidades-grid">
+                <!-- COLUMNA TÉCNICA -->
+                <div class="columna-skills">
+                    <h3>Habilidades Técnicas</h3>
+                    
+                    <div class="categoria-box">
+                        <h4>Lenguajes y Frameworks</h4>
+                        <div class="pills-container">
+                            <span class="pill">Python</span>
+                            <span class="pill">Java</span>
+                            <span class="pill">React</span>
+                            <span class="pill">JavaScript</span>
+                            <span class="pill">TypeScript</span>
+                            <span class="pill">CSS</span>
+                        </div>
+                    </div>
+
+                    <div class="categoria-box">
+                        <h4>Infraestructura y Herramientas</h4>
+                        <div class="pills-container">
+                            <span class="pill">AWS (EC2, VPC, etc)</span>
+                            <span class="pill">Docker</span>
+                            <span class="pill">GitHub</span>
+                            <span class="pill">Linux / Windows Server</span>
+                        </div>
+                    </div>
+
+                    <div class="categoria-box">
+                        <h4>Bases de Datos</h4>
+                        <div class="pills-container">
+                            <span class="pill">PostgreSQL</span>
+                            <span class="pill">Supabase</span>
+                            <span class="pill">MySQL</span>
+                            <span class="pill">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COLUMNA INTERPERSONAL -->
+                <div class="columna-skills">
+                    <h3>Habilidades Interpersonales</h3>
+                    
+                    <div class="categoria-box">
+                        <h4>Enfoque de Trabajo</h4>
+                        <ul class="lista-interpersonal">
+                            <li>Resolución analítica de problemas</li>
+                            <li>Visión integral y comercial de negocio</li>
+                            <li>Comunicación clara y efectiva</li>
+                            <li>Responsabilidad y proactividad</li>
+                            <li>Trabajo colaborativo y en equipo</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
-    <!-- FOOTER / CONTACTO (Obligatorio) -->
+    <!-- FOOTER / CONTACTO -->
     <footer id="contacto">
-        <h2>Contacto</h2>
-        <p>¿Interesado en trabajar juntos? Envíame un mensaje.</p>
-        <p>Telefono: 2634320749</p>
-        <p>Email: jerobustos199@gmail.com</p>
+        <h2>Hablemos</h2>
+        <p>¿Tienes un proyecto en mente o buscas incorporar un desarrollador a tu equipo? Envíame un mensaje.</p>
+        
+        <div class="contacto-datos">
+            <p><strong>Teléfono:</strong> <a href="tel:2634320749">2634320749</a></p>
+            <p><strong>Email:</strong> <a href="mailto:jerobustos199@gmail.com">jerobustos199@gmail.com</a></p>
+        </div>
+
         <div class="redes">
-            <a href="https://www.linkedin.com/in/jeronimo-bustos-93aa262b6/" target="_blank">Linkedin</a>
+            <a href="https://www.linkedin.com/in/jeronimo-bustos-93aa262b6/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/jerobustos" target="_blank">GitHub</a>
         </div>
     </footer>
 
